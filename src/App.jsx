@@ -13,6 +13,7 @@ function App() {
   const [score, setScore] = useState(0);
 
   const currentQuestion = questions[currentIndex];
+  console.log("Current question:", currentQuestion);
 
   function handleStart() {
     setStage("quiz");

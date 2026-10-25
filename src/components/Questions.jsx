@@ -5,7 +5,7 @@ function Question({ question, options, selected, onSelect }) {
     <div className="question">
       <h2>{question}</h2>
       <div className="options">
-        {options.map((text, index) => (
+        {(options ?? []).map((text, index) => (
           <Option
             key={text}
             text={text}
