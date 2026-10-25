@@ -1,4 +1,4 @@
-import Option from "./option";
+import Option from "./Option";
 
 function Question({ question, options, selected, onSelect }) {
   return (
