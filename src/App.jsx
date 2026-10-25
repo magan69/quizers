@@ -5,6 +5,8 @@ import Question from "./components/Question";
 import QuizProgress from "./components/QuizProgress";
 import Result from "./components/Result";
 import "./App.css";
+import Question from "./components/Questions";
+import QuizProgress from "./components/Quizprogress";
 
 function App() {
   const [stage, setStage] = useState("start");
