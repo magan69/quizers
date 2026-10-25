@@ -1,8 +1,6 @@
 import { useState } from "react";
 import questions from "./data/questions";
 import Start from "./components/Start";
-import Question from "./components/Question";
-import QuizProgress from "./components/QuizProgress";
 import Result from "./components/Result";
 import "./App.css";
 import Question from "./components/Questions";
