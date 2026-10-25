@@ -1,10 +1,10 @@
 import { useState } from "react";
 import questions from "./data/questions";
 import Start from "./components/Start";
-import Result from "./components/Result";
-import "./App.css";
 import Question from "./components/Questions";
 import QuizProgress from "./components/Quizprogress";
+import Result from "./components/Result";
+import "./App.css";
 
 function App() {
   const [stage, setStage] = useState("start");
@@ -13,7 +13,6 @@ function App() {
   const [score, setScore] = useState(0);
 
   const currentQuestion = questions[currentIndex];
-  console.log("Current question:", currentQuestion);
 
   function handleStart() {
     setStage("quiz");
@@ -24,12 +23,10 @@ function App() {
   }
 
   function handleNext() {
-    // check if the answer is right
     if (selected === currentQuestion.answer) {
       setScore(score + 1);
     }
 
-    // last question? show the result
     if (currentIndex + 1 === questions.length) {
       setStage("result");
     } else {
