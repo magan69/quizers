@@ -1,0 +1,111 @@
+/* the white card in the middle */
+.app {
+  background: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  padding: 32px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 16px 0;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #4a5568;
+}
+
+/* progress bar */
+.progress {
+  width: 100%;
+  height: 10px;
+  background: #e2e8f0;
+  border-radius: 5px;
+  margin: 8px 0 24px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #f5a524;
+  transition: width 0.3s;
+}
+
+/* answer options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.option {
+  padding: 14px;
+  font-size: 1rem;
+  background: #f7fafc;
+  border: 2px solid #cbd5e0;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.option:hover {
+  border-color: #f5a524;
+}
+
+/* the option the user clicked */
+.option.selected {
+  background: #fff3d6;
+  border-color: #f5a524;
+  font-weight: 600;
+}
+
+/* Start, Next and Restart buttons */
+.main-btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #1f2a44;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background: #2f3f66;
+}
+
+.main-btn:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+/* keyboard focus */
+button:focus-visible {
+  outline: 3px solid #f5a524;
+  outline-offset: 2px;
+}
+
+/* small screens */
+@media (max-width: 600px) {
+  .app {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .option {
+    padding: 12px;
+  }
+}
