@@ -5,7 +5,7 @@ function Question(props) {
     <div>
       <h2>{props.question}</h2>
       <div className="options">
-        {props.options.map((text, index) => (
+        {(props.options ?? []).map((text, index) => (
           <Option
             key={text}
             text={text}
